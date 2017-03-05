@@ -6,7 +6,6 @@
 
 // Launch Configuration Variables
 
-variable "lc_name" {}
 variable "ami_id" {}
 variable "instance_type" {}
 variable "iam_instance_profile" {}
