@@ -23,7 +23,7 @@ resource "aws_launch_configuration" "launch_config" {
     key_name = "${var.key_name}"
     security_groups = ["${var.security_group}"]
     user_data = "${var.user_data}"
-
+    associate_public_ip_address = true
     lifecycle {
         create_before_destroy = true
     }
